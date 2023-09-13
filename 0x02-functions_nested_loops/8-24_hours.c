@@ -8,13 +8,13 @@
 void jack_bauer(void)
 {
 
-	int h1;
-	int h2;
-	int m1;
-	int m2;
-	int a = 9;
+int h1;
+int h2;
+int m1;
+int m2;
+int a = 9;
 
-	h2 = 0;
+h2 = 0;
 while (h2 <= 2)
 {
 if (h2 == 2)
