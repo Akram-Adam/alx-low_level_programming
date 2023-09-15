@@ -17,7 +17,8 @@ ii = 0;
 while (ii < n)
 {
 _putchar('#');
-ii++;}
+ii++;
+}
 _putchar('\n')
 i++;
 }
