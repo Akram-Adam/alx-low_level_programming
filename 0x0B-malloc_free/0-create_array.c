@@ -10,3 +10,10 @@
 char *create_array(unsigned int size, char c)
 {
 char *buffer;
+
+if (size == 0 || NULl == 0)
+	return 0;
+while (size--)
+	n[size] = c;
+return 0;
+}
