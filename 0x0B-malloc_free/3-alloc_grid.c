@@ -18,7 +18,7 @@ return (NULL);
 
 array = (int **)malloc(sizeof(int *) * height);
 if (array == NULL)
-0return (NULL);
+return (NULL);
 
 for (i = 0; i < height; i++)
 array[i] = (int *)malloc(sizeof(int) * width);
@@ -29,7 +29,7 @@ free(array[i]);
 free(array);
 return (NULL);
 }
-}
+
 
 for (i = 0; i < height; i++)
 for (j = 0; j < width; j++)
