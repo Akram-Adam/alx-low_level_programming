@@ -36,7 +36,7 @@ if (len == 0)
 	words = (char **)malloc(sizeof(char *) * (len + 1));
 	if (words == NULL)
 	return (NULL);
-	
+
 	util(words, str);
 	words[len] = NULL;
 	return (words);
@@ -49,6 +49,7 @@ if (len == 0)
 void util(char **words, char *str)
 {
 	int i, j, start, flag;
+
 	i = j = flag = 0;
 	while (str[i])
 		if (flag == 0 && str[i] != ' ')
@@ -79,6 +80,7 @@ if (flag == 1)
 void create_word(char **words, char *str, int start, int end, int index)
 {
 	int i, j;
+
 	i = end - start;
 	words[index] = (char *)malloc(sizeof(char) * (i + 1));
 
