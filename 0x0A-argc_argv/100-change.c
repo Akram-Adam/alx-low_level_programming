@@ -44,3 +44,6 @@ else
 printf("Error\n");
 return (1);
 }
+printf("%d\n", count);
+return (0);
+}
