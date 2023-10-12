@@ -1,16 +1,15 @@
-#include "function_pointers.h"
 #include "holberton.h"
 
 /**
- * print_name - a function that prints a name.
- * @name: the name given
- * @f: function of name
+ * print_name - prints a name.
+ * @name: string to print.
+ * @f: fuction to use.
  *
- * Rteurn: void
+ * Return: NOTHING
  */
 void print_name(char *name, void (*f)(char *))
 {
-if (name != NULL && f != NULL)
+if (!f || !name)
 return;
 f(name);
 }
