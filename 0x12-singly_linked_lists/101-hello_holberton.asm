@@ -1,23 +1,9 @@
-%define sys_write 1
-%define stdout 1
-
-%define sys_exit 60
-%define success 0
-
-%define nl 10
-
-section .data
-
-	message db "Hello, Holberton", nl
-
-section .text
-	global main
+global    main
+          extern    printf
 main:
-	mov rax, sys_write
-	mov rdi, stdout
-	mov rsi, message
-	mov rdx, 17
-	syscall
-	mov    rax, sys_exit
-	mov    rdi, success
-	syscall
+	  mov   edi, format
+	  xor   eax, eax
+	  call  printf
+	  mov 	eax, 0
+	  ret
+format: db `Hello, Holberton\n`,0

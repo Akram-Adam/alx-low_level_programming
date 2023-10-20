@@ -1,19 +1,21 @@
 #include "lists.h"
+
 /**
- * list_len - return the number of elements
-(* a blank line
- *@h: the list
-* Description: print the elements of one list)?
-(* section header: the header of this function is lists.h)*
-* Return: this return the num of the elements in the list
- */
+ * list_len - Calculate the number of elements.
+ * @h: Pointer to a list.
+ * Return: Integer.
+ **/
+
 size_t list_len(const list_t *h)
 {
-	int i;
+	const list_t *temp;
+	unsigned int counter = 0;
 
-	for (i = 0; h; i++)
+	temp = h;
+	while (temp)
 	{
-		h = h->next;
+		counter++;
+		temp = temp->next;
 	}
-	return (i);
+	return (counter);
 }
